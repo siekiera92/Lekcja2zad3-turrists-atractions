@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<script src="js/pgb.js"></script>
+		<script src="cordova.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body onload="init()">
+		
+		<!-- My app main page -->
+		<div data-role="page" id="pageone">
+		  <div data-role="header">
+			<h1>Atrakcje turystyczne</h1>
+		  </div>
+		  <div data-role="main" class="ui-content">
+			
+  			<a href="#mazury" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Mazury</a>
+  			<a href="#baltyk" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Bałtyk</a>
+  			<a href="#tatry" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Tatry</a>
+
+  			<div data-role="popup" id="mazury" data-overlay-theme="a" data-theme="a" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/mzury.png" style="max-height:512px;" alt="Mazury, Polska">
+			</div>
+			<div data-role="popup" id="baltyk" data-overlay-theme="a" data-theme="a" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/baltyk.png" style="max-height:512px;" alt="Morze bałtyckie, Polska">
+			</div>
+			<div data-role="popup" id="tatry" data-overlay-theme="a" data-theme="a" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/tatry.png"  alt="Tatry, Polska">
+			</div>
+			
+			
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) Piotr Siekierski</h1>
+		  </div> 
+		</div> 
+		
+
+	
+		
+		
+	</body>
+</html>
